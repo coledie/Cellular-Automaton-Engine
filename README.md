@@ -87,7 +87,7 @@ State settings
 
 Can add state functionality or UI functionality. 
 
-Below is a list of all engine variables to interact with, past that is function templates
+Below is a list of all engine variables & functions to interact with, past that is function templates
 
 
 Variables
@@ -111,7 +111,7 @@ Variables
 	
 Functions
 
-	Engine:create_cells()  -- Create new, empty	cell matrix
+	Engine:create_cells()  -- Create new, empty cell matrix
 	
 	Engine:update_states()  -- Update all cell states on matrix
 	
@@ -128,7 +128,7 @@ Functions
 	Engine:start_save_prompt()  -- Starts prompt for entering save name, then saves if can
 	
 
-#### Adding State Functions
+#### State Function Templates
 
 Set a state function in its table with func=state_function
 
@@ -146,7 +146,7 @@ Set a state function in its table with func=state_function
 	end
 
 	
-#### Adding User Controls
+#### User Control Function Templates
 
 On Mouse Click
 
