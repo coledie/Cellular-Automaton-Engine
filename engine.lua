@@ -73,9 +73,10 @@ function Engine:update_states()
 
    local function deepcopy(orig)
 	  --------------------------------------------------
-	  -- Creates a shallow copy of a nested table structure
+	  -- Creates a deep copy of a nested table structure
+	  -- credit: https://stackoverflow.com/questions/27434142/how-do-i-append-to-a-table-in-lua
 	  -- @param {table} tbl Table to be copied
-	  -- @returns {table} Shallow copy of tbl
+	  -- @returns {table} Deep copy of tbl
 	  --------------------------------------------------
       local orig_type = type(orig)
       local copy

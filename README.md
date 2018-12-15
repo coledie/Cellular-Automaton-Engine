@@ -34,6 +34,8 @@ Engine Controls
 
 3. Override any of the following values in game file
 
+4. Use basic functionality from game_helper.lua by adding *require "game_helper"* at top of the game file
+
 Setting defaults
 
 	Engine.cell_size = 25
