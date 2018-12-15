@@ -9,6 +9,6 @@ function love.conf(t)
 	
    t.console = false  -- To display or not to display console
 	
-   update_delay = 1  -- Delay in seconds between updates
+   update_delay = .5  -- Delay in seconds between updates
    save_directory = ""  -- Directory to save files to by default, use \\
 end
