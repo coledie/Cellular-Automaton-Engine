@@ -14,17 +14,14 @@ Engine Controls
 	
 	ctrl: Toggle showing extra data
 	
-    spacebar or p: Toggle pause
+	spacebar or p: Toggle pause
 		
 	right or d: Step forward, update	
 		
 	s: Open save file prompt
-	
 		1. Enter filename
-		
 		2. Press enter to save, escape to quit
-		
-		3. Filename = save_directory(set in conf.lua) .. filename entered
+		3. Save filename = save_directory(set in conf.lua) .. filename entered
 
 	drop file on window: load file
 	
@@ -37,7 +34,7 @@ Engine Controls
 
 3. Override any of the following values in game file
 
-Setting: default
+Setting defaults
 
 	Engine.cell_size = 25
 	
@@ -129,7 +126,7 @@ Functions
 	Engine:start_save_prompt()  -- Starts prompt for entering save name, then saves if can
 	
 
-#### Adding State Functionality
+#### Adding State Functions
 
 Set a state function in its table with func=state_function
 
@@ -149,7 +146,7 @@ Set a state function in its table with func=state_function
 	
 #### Adding User Controls
 
-Mouse Click: On mouse button release
+On Mouse Click
 
 	function Engine:mousepressed(normalized_x, normalized_y, button)
 	   --------------------------------------------------
@@ -163,8 +160,8 @@ Mouse Click: On mouse button release
 	end
 
 
-Mouse Unclick: On mouse button release
-	
+On Mouse Unclick
+
 	function Engine:mousereleased(normalized_x, normalized_y, button)
 	   --------------------------------------------------
 	   -- Action to take on unclick
@@ -176,7 +173,7 @@ Mouse Unclick: On mouse button release
 	   return nil
 	end
 	
-Keypress: On keyboard button press
+On Keypress
 
 	function Engine:keypress(key)
 	   --------------------------------------------------
@@ -187,7 +184,7 @@ Keypress: On keyboard button press
 	   return nil
 	end
 
-Keyrelease: On keyboard button release
+On Keyrelease
 
 	function Engine:keyreleased(key)
 	   --------------------------------------------------
