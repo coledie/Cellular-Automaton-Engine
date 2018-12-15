@@ -1,5 +1,7 @@
-# Cellular Automata Game of Life
+﻿# Cellular Automata Game of Life
 An implementation of Conway's game of life.
+
+![glider gun](img/glider_gun.gif)
 
 ## Requirements
 Lua 5
