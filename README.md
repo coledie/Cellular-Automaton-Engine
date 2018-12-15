@@ -29,7 +29,7 @@ Engine Controls
 	drop file on window: load file
 	
 	
-## Setting up a game
+## Setting up a Game
 
 1. Create a game file(use game_template.lua as template)
 
@@ -52,20 +52,20 @@ Setting: default
 	function Engine:keyreleased(key) end
 
 	
-#### Engine settings
+### Engine Settings
 
 -- In conf.lua
 
-update_delay: Delay in seconds between updates, false = No delay
+	update_delay: Delay in seconds between updates, false = No delay
 
-Engine.save_directory: Directory to save files to by default
+	Engine.save_directory: Directory to save files to by default
 
 -- In game file
 
-Engine.cell_size: Side length of cell
+	Engine.cell_size: Side length of cell
 
 
-#### Creating cell states
+### Creating Cell States
 
 All cell states are stored as tables in Engine.states.
 
@@ -84,7 +84,7 @@ State settings
 	func=stay same state: Function to call on each cell of state, returns new state
 
 	
-#### Adding functionality 
+### Adding Functionality 
 
 Can add state functionality or UI functionality. 
 
@@ -129,28 +129,21 @@ Functions
 	Engine:start_save_prompt()  -- Starts prompt for entering save name, then saves if can
 	
 
-#### Adding state functionality
+#### Adding State Functionality
 
 Set a state function in its table with func=state_function
 
 	function state_function(x, y, cell_matrix)
 	
 	   --------------------------------------------------
-	   
 	   -- Update command for all cells of state
-	   
 	   -- @param {number} x X coord of cell
-	   
 	   -- @param {number} y Y coord of cell
-	   
 	   -- @param {table{table{number}}} cell_matrix 2d matrix of cell states
-	   
 	   -- @returns {number} New cell state
-	   
 	   --------------------------------------------------
 	
 	   return new_state_id 
-
 	end
 
 	
@@ -159,78 +152,50 @@ Set a state function in its table with func=state_function
 Mouse Click: On mouse button release
 
 	function Engine:mousepressed(normalized_x, normalized_y, button)
-	
 	   --------------------------------------------------
-	   
 	   -- Action to take on click
-	   
 	   -- @param {number} normalized_x Normalized x pos of mouse
-	   
 	   -- @param {number} normalized_y Normalized y pos of mouse
-	   
 	   -- @param {left=1, right=2, middle=3} button Mouse button pressed
-	   
 	   --------------------------------------------------
-   
    
 	   return nil
-	
 	end
 
 
 Mouse Unclick: On mouse button release
 	
 	function Engine:mousereleased(normalized_x, normalized_y, button)
-	
 	   --------------------------------------------------
-	   
 	   -- Action to take on unclick
-	   
 	   -- @param {number} normalized_x Normalized x pos of mouse
-	   
 	   -- @param {number} normalized_y Normalized y pos of mouse
-	   
 	   -- @param {left=1, right=2, middle=3} button Mouse button released
-	   
 	   --------------------------------------------------
-
 	   
 	   return nil
-	
 	end
 	
 Keypress: On keyboard button press
 
 	function Engine:keypress(key)
-	   
 	   --------------------------------------------------
-	   
 	   -- On key press take action
-	   
 	   -- @param {love keyconstant} key Keyboard key pressed
-	   
 	   --------------------------------------------------
-	   
 	   
 	   return nil
-	   
 	end
 
 Keyrelease: On keyboard button release
 
 	function Engine:keyreleased(key)
-	
 	   --------------------------------------------------
-	   
 	   -- On key release take action
-	   
 	   -- @param {love keyconstant} key Keyboard key released
-	   
 	   --------------------------------------------------
-	   
 	   
 	   return nil
-	   
 	end
 
 
