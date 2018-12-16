@@ -8,7 +8,7 @@ function love.load()
    
    input_buffer = ""  -- For logging text input
 
-   initial_pause = true  -- So the change of focus at game start doesnt unpause
+   player_pause = true  -- So the change of focus doesnt unpause
    paused = true
    
    last_time = love.timer.getTime()  -- For pacing matrix updates
@@ -94,7 +94,7 @@ function love.keypressed(key)
    if not get_text_intput then
       -- Pausing
       if key == 'space' or key == 'p' then
-         initial_pause = false
+         player_pause = not paused
          paused = not paused
       end 
    
@@ -205,7 +205,7 @@ function love.focus(focused)
    -- @param {bool} f State of focus
    --------------------------------------------------
 
-   if not initial_pause then paused = not focused end
+   if not player_pause then paused = not focused end
   
    print(focused and "GAINED FOCUS" or "LOST FOCUS")
 end
