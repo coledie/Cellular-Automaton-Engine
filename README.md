@@ -101,6 +101,8 @@ Variables
 	
 	paused = bool  -- If game is paused
 
+	player_pause = bool  -- If player command triggered pause, refocusing game wont trigger change
+
 	show_data = bool  -- Whether or not to show cell data
 	
 	save_prompt = bool  -- Whether save prompt is showing or not
