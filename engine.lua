@@ -1,6 +1,6 @@
 Entry = {
-  title = "Cellular Automata Engine", version = "1.0",
-  description = [[Customizable cellular automata engine]],
+  title = "Cellular Automaton Engine", version = "1.0",
+  description = [[Customizable cellular automaton engine]],
   author = "Cole Dieckhaus",
   url = "https://github.com/colesteroni"
 }
