@@ -1,4 +1,4 @@
--- Cellular automataa engine game template
+-- Cellular automaton engine game template
 -- Require this file in engine.lua
 
 
