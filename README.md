@@ -1,8 +1,7 @@
-﻿# Cellular Automata Engine
+﻿# Cellular Automaton Engine
 An engine to help make cellular automata creation easy.
 
 ![glider gun](img/glider_gun.gif)
-
 
 
 ## Requirements
