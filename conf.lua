@@ -4,7 +4,7 @@ function love.conf(t)
 	
    t.window.resizable = false
 
-   t.window.title = "Cellular Automata"
+   t.window.title = "Cellular Automaton"
    t.window.icon = "img/icon.jpg"
 	
    t.console = false  -- To display or not to display console
