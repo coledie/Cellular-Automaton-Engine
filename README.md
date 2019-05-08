@@ -200,7 +200,3 @@ On Keyrelease
 	   
 	   return nil
 	end
-
-
-## 
-Cole Dieckhaus - csdhv9@mst.edu
